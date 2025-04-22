@@ -1,0 +1,14 @@
+data_hora,idade,renda,tempo_de_casa,resultado,interpretacao
+2025-04-21 19:33:03,32,6000,5,1,Provavelmente compraria.
+2025-04-21 19:33:13,20,6000,5,1,Provavelmente compraria.
+2025-04-21 19:33:23,35,5000,5,0,Provavelmente não compraria.
+2025-04-21 19:33:35,35,5000,7,1,Provavelmente compraria.
+2025-04-21 19:33:59,35,5000,5,0,Provavelmente não compraria.
+2025-04-21 19:34:12,35,5000,7,1,Provavelmente compraria.
+2025-04-21 19:35:22,35,5000,3,0,Provavelmente não compraria.
+2025-04-21 19:35:27,35,5000,8,1,Provavelmente compraria.
+2025-04-21 19:53:40,35,5000,10,1,Provavelmente compraria.
+2025-04-21 19:53:45,35,5000,8,1,Provavelmente compraria.
+2025-04-21 19:54:36,70,500000,1,1,Provavelmente compraria.
+2025-04-21 20:30:41,22,2300,15,0,Provavelmente não compraria.
+2025-04-21 20:31:22,65,15000,15,1,Provavelmente compraria.
