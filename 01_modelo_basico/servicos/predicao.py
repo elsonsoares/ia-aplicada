@@ -7,10 +7,19 @@ from datetime import datetime
 import os
 
 # Carregar modelo treinado uma única vez.
-modelo = joblib.load('01_modelo_basico/modelo_treinado.pkl')
-#caminho_base = os.path.dirname(os.path.abspath(__file__))
-#caminho_modelo = os.path.join(caminho_base, '..', '01_modelo_basico', 'modelo_treinado.pkl')
-#modelo = joblib.load(os.path.abspath(caminho_modelo))
+#modelo = joblib.load('01_modelo_basico/modelo_treinado.pkl')
+
+# Obtém o diretório atual do arquivo
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+print(BASE_DIR)
+
+# Constrói o caminho absoluto para o arquivo modelo_treinado.pkl
+modelo_path = os.path.join(BASE_DIR, 'modelo_treinado.pkl')
+print(modelo_path)
+
+# Carrega o modelo
+modelo = joblib.load(modelo_path)
+print(modelo_path)
 
 
 # Função para extrair o caminho da decisão
