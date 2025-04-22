@@ -7,7 +7,7 @@ from datetime import datetime
 import os
 
 # Carregar modelo treinado uma única vez
-modelo = joblib.load('.\modelo_treinado.pkl')
+modelo = joblib.load('01_modelo_basico/modelo_treinado.pkl')
 
 # Função para extrair o caminho da decisão
 def caminho_decisao(modelo, dados_entrada):
