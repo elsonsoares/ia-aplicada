@@ -1,13 +1,4 @@
 import os
-
-print("🔎 Diretório atual:", os.getcwd())
-print("📂 Conteúdo do diretório:")
-print(os.listdir(os.getcwd()))
-
-for root, dirs, files in os.walk(".", topdown=True):
-    for name in files:
-        print(os.path.join(root, name))
-
         
 from flask import Flask, request
 from servicos.predicao import prever_cliente

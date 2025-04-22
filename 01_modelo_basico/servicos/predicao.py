@@ -10,16 +10,22 @@ import os
 #modelo = joblib.load('01_modelo_basico/modelo_treinado.pkl')
 
 # Obtém o diretório atual do arquivo
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-print(BASE_DIR)
+#BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+#print(BASE_DIR)
 
 # Constrói o caminho absoluto para o arquivo modelo_treinado.pkl
-modelo_path = os.path.join(BASE_DIR, 'modelo_treinado.pkl')
-print(modelo_path)
+#modelo_path = os.path.join(BASE_DIR, 'modelo_treinado.pkl')
+#print(modelo_path)
 
 # Carrega o modelo
-modelo = joblib.load(modelo_path)
-print(modelo_path)
+#modelo = joblib.load(modelo_path)
+#print(modelo_path)
+
+caminho_modelo = os.path.join(os.path.dirname(__file__), '..', '01_modelo_basico', 'modelo_treinado.pkl')
+print(caminho_modelo)
+
+# Carrega o modelo
+modelo = joblib.load(os.path.abspath(caminho_modelo))
 
 
 # Função para extrair o caminho da decisão
